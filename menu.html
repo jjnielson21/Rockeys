@@ -1,104 +1,189 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
     <title>Rockey Burgers</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <a href="index.html">
-            <button>Home</button>
-        </a>
-        <a href="menu.html">
-            <button class="active">Menu</button>
-        </a>
-        <a href="locations.html">
-            <button>Locations</button>
-        </a>
-        <a href="About.html">
-            <button>About</button>
-        </a>
-    </header>
-    Burgers
-Our burgers are cooked medium and are very juicy!
-Rockey Burger $8.25
-Two 4 oz. patties, with Awesome Sauce
-Add Cheese ... $0.75
-Add Bacon ... $1.25
-Super Burger $5.75
-4 oz. patties, with Awesome Sauce
-Add Cheese ... $0.50
-Add Bacon ... $1.25
-Toppings
-Free
-Lettuce
-Tomato
-Red Onions
-Jalapeños
-Grilled Onions
-Housemade Pickles
-Extra
-Avocado $1.25
-Bacon $1.25
-Roasted Portabello $1.25
-Organic Egg $1.50
-Fries
-Our burgers are cooked medium and are very juicy!
-French Fries $2.75
-Delicious freshly peel potatoes fries
-
-Garlic Fries $3.50
-Delicious freshly peel potatoes fries
-Add Three Dips $1.50
-Super Sauce, Housemade Mayo, Chipotle
-Chicken
-Natural free range chicken breast with chipotle aioli
-Chicken Sandwich $8.00
-Add Jack Cheese ... $0.50
-Add Bacon ... $1.25
-Garlic Fries $3.50
-Delicious freshly peel potatoes fries
-Add Three Dips $1.50
-Super Sauce, Housemade Mayo, Chipotle
-Drinks
-Fountain ... $2.50
-Organic Iced Tea ... $2.75
-Fresh Lemonade ... $3.25
-Water Bottle ... $2.00
-Cones
-Rockey Creamery organic soft serve ice cream
-Regular ... $3.75
-- Vanilla, Chocolate, or Swirled
-Dipped Cone ... $4.50
-- Vanilla ice cream, dipped in chocolate
-Shakes
-Made with Rockey Creamery organic soft serve
-
-Regular ... $4.75
-- Vanilla, Chocolate, or Swirled
-Super Shake ... $5.75
-- Cookies & Cream, Fresh Strawberries, or Chocolate & Chips
-Kids Size ... $3.25
-- Vanilla, Chocolate, or Swirled
-- Add Malt ... $0.50
-
-    <footer>
-        <a href="">Contact Info</a>
-        <a href="">Employment Opportunities</a>
-        <a href="">FAQ</a>
-        &copy; 2019 JJNCorp
-    </footer>
-    
-
+    <div class='container'>
+        <nav class='topnav'>
+            <span class='openbtn' onclick="openNav()">&#9776;</span>
+            <a href="#home">FAQ</a>
+            <a href="#news">Employment</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="main">
+            <nav id="sidenav">
+                <img src="images/rockeyburgers03-logo.png" alt="Logo">
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="menu.html"><i class="fas fa-hamburger"></i>Menu</a>
+                <a href="locations.html"><i class="fas fa-search-location"></i>Locations</a>
+                <a href="About.html"><i class="info fas fa-info"></i>About</a>
+            </nav>
+            <div class="menu" onclick="closeNav()">
+                <h1>Burgers</h1>
+                <h3>Our burgers are cooked medium and are very juicy!</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/burger-hero.jpg" alt="Rockey Burger">
+                        <div class="container">
+                            <h4>Rockey Burger $8.25</h4>
+                            <p>Two 4 oz. patties, with Awesome Sauce</p>
+                            <p>Add Cheese ... $0.75</p>
+                            <p>Add Bacon ... $1.25</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/Superburger.jpg" alt="Super Burger">
+                        <div class="container">
+                            <h4>Super Burger $5.75</h4>
+                            <p>4 oz. patties, with Awesome Sauce</p>
+                            <p>Add Cheese ... $0.50</p>
+                            <p>Add Bacon ... $1.25</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Chicken</h1>
+                <h3>Natural free range chicken breast with chipotle aioli!</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/chicken.jpg" alt="Chicken Sandwich">
+                        <div class="container">
+                            <h4>Chicken Sandwich $8.00</h4>
+                            <p>Add Jack Cheese ... $0.50</p>
+                            <p>Add Bacon ... $1.25</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Toppings</h1>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/freetoppings.JPG" alt="Free Toppings">
+                        <div class="container">
+                            <h4>Free</h4>
+                            <p>Lettuce</p>
+                            <p>Tomato</p>
+                            <p>Red Onions</p>
+                            <p>Jalapeños</p>
+                            <p>Grilled Onions</p>
+                            <p>Housemade Pickles</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/paidtoppings.jpg" alt="Paid Toppings">
+                        <div class="container">
+                            <h4>Extra</h4>
+                            <p>Avocado $1.25</p>
+                            <p>Bacon $1.25</p>
+                            <p>Roasted Portabello $1.25</p>
+                            <p>Organic Egg $1.50</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Fries</h1>
+                <h3>Delicous freshley peeled potatoes!</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/Frenchfries.jpg" alt="French Fries">
+                        <div class="container">
+                            <h4>French Fries $2.75</h4>
+                            <p>Add Cheese ... $0.75</p>
+                            <p>Add Bacon ... $1.25</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/garlicfries.jpg" alt="Garlic Fries">
+                        <div class="container">
+                            <h4>Garlic Fries $3.50</h4>
+                            <p>Add Cheese ... $0.75</p>
+                            <p>Add Bacon ... $1.25</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/dipping.jpg" alt="Dipping Sauce">
+                        <div class="container">
+                            <h4>Add Three Dips $1.50</h4>
+                            <p>Super Sauce</p>
+                            <p>Housemade Mayo</p>
+                            <p>Chipotle</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Drinks</h1>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/Drinks.jpg" alt="Drinks">
+                        <div class="container">
+                            <p>Fountain ... $2.50</p>
+                            <p>Organic Iced Tea ... $2.75</p>
+                            <p>Fresh Lemonade ... $3.25</p>
+                            <p>Water Bottle ... $2.00</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Dessert</h1>
+                <h3>Made with Rockey Creamery organic soft serve</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/cone.jpg" alt="Ice Cream cone">
+                        <div class="container">
+                            <h4>Cone ... $3.75</h4>
+                            <p>Vanilla</p>
+                            <p>Chocolate</p>
+                            <p>Swirled</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/dippedcone.jpg" alt="Dipped Ice Cream Cone">
+                        <div class="container">
+                            <h4>Dipped Cone ... $4.50</h4>
+                            <p>Vanilla ice cream, dipped in chocolate</p>
+                            <p>Chocolate ice cream, dipped in chocolate</p>
+                            <p>Swirled ice cream, dipped in chocolate</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/shake.jpg" alt="Shake">
+                        <div class="container">
+                            <h4>Shakes ... $4.75</h4>
+                            <p>Vanilla</p>
+                            <p>Chocolate</p>
+                            <p>Swirled</p>
+                            <p>Add Malt ... $0.50</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/supershake.jpg" alt="Super Shake">
+                        <div class="container">
+                            <h4>Super Shake ... $5.75</h4>
+                            <p>Cookies & Cream</p>
+                            <p>Fresh Strawberries</p>
+                            <p>Chocolate & Chips</p>
+                            <p>Add Malt ... $0.50</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/kidsshake.jpg" alt="Kids Shake">
+                        <div class="container">
+                            <h4>Kids Shake ... $3.25</h4>
+                            <p>Vanilla</p>
+                            <p>Chocolate</p>
+                            <p>Swirled</p>
+                            <p>Add Malt ... $0.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </div>
 </body>
-
-
-    <!-- 
-    
-// Menu Page, Burgers, Vegan options, Sides, Drinks, Desserts
-// Locations page: list of locations, address, phone hours, link for address to google 
-//contact info, phone number, email, and direct input sent to email
-// employment opportunities, Store, position with link to store info  -->
+​
 
 </html>

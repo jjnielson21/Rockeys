@@ -1,72 +1,65 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rockey Burgers</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href='css/style.css' rel='stylesheet' type='text/css'>
+  <title>Rockey Burgers</title>
 </head>
+
 <body>
-    <header>
-        <a href="index.html">
-            <button>Home</button>
-        </a>
-        <a href="menu.html">
-            <button>Menu</button>
-        </a>
-        <a href="locations.html">
-            <button>Locations</button>
-        </a>
-        <a href="About.html">
-            <button class="active">About</button>
-        </a>
-    </header>
-    About
-    Slogan: Best Quality Burgers in town. Off the charts.
-    Step into any ROCKEY BURGERS, and you’ll notice we’re different.
-    From our famous (free) house-made pickles, to the hand-painted
-    signage, to our cheerful staff, we build our restaurants like we build
-    our burgers–sustainably, locally, and with an unwavering commitment
-    to quality.
-    Fresh, quality produce, meat, dairy and buns, sourced from partners
-    located just miles from our restaurants, are the ingredients to making
-    the perfect burger. This commitment to creating the best possible food
-    for our guests is a direct reflection of our promise of creating fast food
-    burgers using slow food values.
-    Bite into any Super burger, and taste the difference.
-    Our burgers, fries, and shakes are made with the finest,
-    
-    freshest ingredients available.
-    
-    All our beef is Rockey Farms, humanely-raised, vegetarian-fed,
-    ground fresh daily, and sourced from a family-owned ranch.
-    All of our shakes and cones are made with organic cream from
-    Rockey Creamery, a small, family-owned, organic farm located South
-    of Nephi, Utah.
-    Our buns are baked to our specification by an artisan baker in Nephi,
-    UT
-    The potatoes we use to make our French fries are made from
-    potatoes grown in North America by growers who are required to
-    identify the genetic source of their seed potatoes. We do not work with
-    genetically modified potato varieties. Our potatoes are processed
-    fresh off the field and delivered to us without any modifications. We
-    proudly serve Sir Kensington ketchup.
-
-    <footer>
-        <a href="">Contact Info</a>
-        <a href="">Employment Opportunities</a>
-        <a href="">FAQ</a>
-        &copy; 2019 JJNCorp
-    </footer>
-    
-
+  <div class='container'>
+    <nav class='topnav'>
+      <span class='openbtn' onclick="openNav()">&#9776;</span>
+      <a href="#home">FAQ</a>
+      <a href="#news">Employment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="main">
+      <nav id="sidenav">
+        <img src="images/rockeyburgers03-logo.png" alt="Logo">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="menu.html"><i class="fas fa-hamburger"></i>Menu</a>
+        <a href="locations.html"><i class="fas fa-search-location"></i>Locations</a>
+        <a href="About.html"><i class="info fas fa-info"></i>About</a>
+      </nav>
+      <div class="about" onclick="closeNav()">
+            <h1>About</h1>
+            <h3>Slogan: Best Quality Burgers in town. Off the charts.</h3>
+            <p>Step into any ROCKEY BURGERS, and you’ll notice we’re different.
+                From our famous (free) house-made pickles, to the hand-painted
+                signage, to our cheerful staff, we build our restaurants like we build
+                our burgers–sustainably, locally, and with an unwavering commitment
+                to quality.</p>
+            <p>Fresh, quality produce, meat, dairy and buns, sourced from partners
+                located just miles from our restaurants, are the ingredients to making
+                the perfect burger. This commitment to creating the best possible food
+                for our guests is a direct reflection of our promise of creating fast food
+                burgers using slow food values.</p>
+            <p>Bite into any Super burger, and taste the difference. Our burgers, 
+                fries, and shakes are made with the finest, freshest ingredients 
+                available.</p>
+            
+            
+            
+            <p>All our beef is Rockey Farms, humanely-raised, vegetarian-fed,
+                ground fresh daily, and sourced from a family-owned ranch.
+                All of our shakes and cones are made with organic cream from
+                Rockey Creamery, a small, family-owned, organic farm located South
+                of Nephi, Utah. Our buns are baked to our specification by an artisan baker in Nephi,
+                UT The potatoes we use to make our French fries are made from
+                potatoes grown in North America by growers who are required to
+                identify the genetic source of their seed potatoes. We do not work with
+                genetically modified potato varieties. Our potatoes are processed
+                fresh off the field and delivered to us without any modifications. We
+                proudly serve Sir Kensington ketchup.</p>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </div>
 </body>
-
-
-    <!-- 
-    
-// Menu Page, Burgers, Vegan options, Sides, Drinks, Desserts
-// Locations page: list of locations, address, phone hours, link for address to google 
-//contact info, phone number, email, and direct input sent to email
-// employment opportunities, Store, position with link to store info  -->
 
 </html>

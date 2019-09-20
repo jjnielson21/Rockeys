@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href='css/style.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <script src="scripts.js"></script>
+  <title>Rockey Burgers</title>
 </head>
+
 <body>
   <div class='container'>
-    <nav id="sidenav">
-      <img src="images/rockeyburgers03-logo.png" alt="">
-      <a href="index.html"><i class="fas fa-home"></i>Home</a>
-      <a href="menu.html"><i class="fas fa-hamburger"></i>Menu</a>
-      <a href="locations.html"><i class="fas fa-search-location"></i>Locations</a>
-      <a href="About.html"><i class="fas fa-info"></i>About</a>
+    <nav class='topnav'>
+      <span class='openbtn' onclick="openNav()">&#9776;</span>
+      <a href="#home">FAQ</a>
+      <a href="#news">Employment</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <div class='pagecontent'>
-      <nav class='topnav'>
-        <span class='openbtn' onclick="openNav()">&#9776;</span>
-        <a href="#home">FAQ</a>
-        <a href="#news">Employment</a>
-        <a href="contact.html">Contact</a>
+    <div class="main">
+      <nav id="sidenav">
+        <img src="images/rockeyburgers03-logo.png" alt="Logo">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="menu.html"><i class="fas fa-hamburger"></i>Menu</a>
+        <a href="locations.html"><i class="fas fa-search-location"></i>Locations</a>
+        <a href="About.html"><i class="info fas fa-info"></i>About</a>
       </nav>
-      <main onclick="closeNav()">
+      <div class="page" onclick="closeNav()">
         <h1>Rockey Burgers</h1>
         <h3>Best Quality Burgers in town. Off the charts.</h3>
-      </main>  
-        
+        <div class="buttoncont">
+          <a class="button" href="#">Subscribe</a>
+        </div>
       </div>
     </div>
+    <script src="scripts.js"></script>
   </div>
 </body>
-​
+
 </html>
