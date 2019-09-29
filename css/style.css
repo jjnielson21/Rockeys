@@ -3,7 +3,6 @@
   height: 100%;
   width: calc(100% - 220px);
   position: relative;
-  padding-left: 30px;
   margin-top: 50px; }
   .menu h1 {
     text-align: center;
@@ -19,10 +18,11 @@
   .menu .cards {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap; }
   .menu .card {
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -48,31 +48,34 @@
   height: 100%;
   width: calc(100% - 220px);
   position: relative;
-  padding-left: 30px;
   margin-top: 50px; }
   .locations h1 {
     margin: 0;
     padding-top: 30px;
-    text-align: center; }
+    text-align: center;
+    font-size: 55px; }
   .locations h2 {
-    text-align: center; }
+    text-align: center;
+    font-size: 30px; }
   .locations .lcards {
-    width: 1000px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap; }
   .locations .lcard {
-    width: 400px;
-    height: 600px;
+    width: 300px;
+    height: 500px;
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     padding: 10px;
     margin: 10px; }
     .locations .lcard img {
-      width: 400px;
-      max-height: 300px; }
+      width: 300px;
+      max-height: 200px; }
     .locations .lcard p {
-      margin: 0; }
+      margin: 0;
+      font-size: 20px; }
 
 @media screen and (max-width: 700px) {
   .locations {
@@ -85,15 +88,23 @@
   height: 100%;
   width: calc(100% - 220px);
   position: relative;
-  padding-left: 30px;
   margin-top: 50px; }
+  .about .aboutext {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px; }
   .about h1 {
     text-align: center;
-    padding-top: 30px; }
+    padding-top: 30px;
+    font-size: 55px; }
   .about h3 {
-    text-align: center; }
+    text-align: center;
+    font-size: 30px;
+    color: #6A0203; }
   .about p {
-    font-size: 20px; }
+    font-size: 22px; }
 
 @media screen and (max-width: 700px) {
   .main .about {
@@ -101,16 +112,42 @@
     height: 100%;
     width: 100%; } }
 
-.faq_contact {
+.faqcontact {
   left: 220px;
   height: 100%;
   width: calc(100% - 220px);
   position: relative;
-  padding-left: 30px;
   margin-top: 50px; }
-  .faq_contact h1 {
+  .faqcontact h1 {
     text-align: center;
-    padding-top: 25px; }
+    padding-top: 25px;
+    font-size: 55px; }
+  .faqcontact li {
+    font-size: 40px; }
+    .faqcontact li a {
+      text-decoration: none;
+      color: #6A0203; }
+  .faqcontact p {
+    font-size: 25px; }
+  .faqcontact form {
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+    width: 500px;
+    padding-left: 20px;
+    clear: both; }
+    .faqcontact form input {
+      width: 100%;
+      clear: both;
+      height: 27px; }
+  .faqcontact .submit {
+    background-color: #6A0203;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 27px;
+    margin: 20px auto; }
 
 .expando {
   display: none; }

@@ -27,7 +27,7 @@
                 <a href="locations.html"><i class="fas fa-search-location"></i>Locations</a>
                 <a href="About.html"><i class="info fas fa-info"></i>About</a>
             </nav>
-            <div class="faq_contact" onclick="closeNav()">
+            <div class="faqcontact" onclick="closeNav()">
                 <div class="faq">
                     <h1>Frequently Asked Questions</h1>
                     <ul>
@@ -49,16 +49,18 @@
                                 burgers taste so amazing. 
                             </p>    
                         </li>
-                        <li><a href="#Expando3">Test</a>
-                            <p class="expando" id="Expando3">a;lsdkfj;alsdlkfj;asdlkfj</p>
-                        </li>
                     </ul>
                 </div>
+                <div class="contact">
+                    <h1>Contact</h1>
                 <form>
-                    Name: <input type="text" name="name">
-                    Email <input type="email" name="email">
-                    <input type="submit" value="Submit">
+                    <span>First Name: <input type="text" name="fname"></span>
+                    <span>Last Name:  <input type="text" name="lname"></span>
+                    <span>Email:      <input type="email" name="email"></span>
+                    <span>Message: <textarea name="message"cols="100" rows="5"></textarea> </span>
                 </form>
+                <input class='submit' type="submit" value="Submit">
+                </div>
             </div>
         </div>
         <script src="scripts.js"></script>
