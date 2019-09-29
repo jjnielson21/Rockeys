@@ -2,6 +2,7 @@
 @import "_locations";
 @import "_about";
 @import "_faq_contact";
+@import "_employment";
 
 body {
     width: 100%;
@@ -36,6 +37,9 @@ body {
         padding: 16px;
         text-decoration: none;
         transition: all .5s;
+    }
+    i {
+        color: blue
     }
 }
 

@@ -161,6 +161,49 @@
     height: 100%;
     width: 100%; } }
 
+.employments {
+  left: 220px;
+  height: 100%;
+  width: calc(100% - 220px);
+  position: relative;
+  margin-top: 50px; }
+  .employments .jobs {
+    width: 100%; }
+    .employments .jobs form {
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+      width: 500px;
+      padding-left: 20px;
+      clear: both; }
+      .employments .jobs form input {
+        width: 100%;
+        clear: both;
+        height: 25px; }
+  .employments h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 55px;
+    color: #6A0203; }
+  .employments h3 {
+    text-align: center;
+    font-size: 35px; }
+
+.submit {
+  background-color: #6A0203;
+  color: whitesmoke;
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 27px;
+  margin: 20px auto; }
+
+@media screen and (max-width: 700px) {
+  .main .about {
+    left: 0px;
+    height: 100%;
+    width: 100%; } }
+
 body {
   width: 100%;
   height: 100%;
@@ -191,6 +234,8 @@ body {
     padding: 16px;
     text-decoration: none;
     transition: all .5s; }
+  .topnav i {
+    color: blue; }
 
 .openbtn {
   flex-grow: 1;
