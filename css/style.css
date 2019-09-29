@@ -105,6 +105,12 @@
     color: #6A0203; }
   .about p {
     font-size: 22px; }
+  .about iframe {
+    width: 560px;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; }
 
 @media screen and (max-width: 700px) {
   .main .about {
