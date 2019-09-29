@@ -7,13 +7,17 @@
   margin-top: 50px; }
   .menu h1 {
     text-align: center;
-    padding-top: 30px; }
+    padding-top: 30px;
+    font-size: 55px;
+    padding-right: 50px; }
   .menu h3 {
-    text-align: center; }
+    text-align: center;
+    font-size: 35px;
+    padding-right: 50px; }
   .menu h1:nth-child(1) {
     margin-top: 0; }
   .menu .cards {
-    width: 1000px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; }
   .menu .card {
@@ -27,8 +31,11 @@
     .menu .card img {
       width: 300px;
       max-height: 200px; }
+    .menu .card h4 {
+      font-size: 22px; }
     .menu .card p {
-      margin: 0; }
+      margin: 0;
+      font-size: 17px; }
 
 @media screen and (max-width: 700px) {
   .main .menu {
@@ -121,7 +128,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Teko', sans-serif; }
 
 .container {
   width: 100%;
@@ -139,7 +147,8 @@ body {
   padding-right: 30px;
   position: fixed;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 20px; }
   .topnav a {
     color: #6A0203;
     padding: 16px;
@@ -176,13 +185,13 @@ body {
       background-color: #3B3936;
       border-bottom: 1px dotted whitesmoke;
       padding: 8px 32px;
-      font-size: 25px;
+      font-size: 30px;
       text-decoration: none;
       transition: all .6s; }
     .main #sidenav i {
       padding-right: 20px; }
   .main .info {
-    padding-right: 33px !important; }
+    padding-right: 37px !important; }
   .main .page {
     left: 220px;
     height: 100%;
@@ -196,30 +205,79 @@ body {
     .main .page h1 {
       text-align: center;
       color: whitesmoke;
-      margin-top: 0;
+      margin: 0;
       padding-top: 20px;
-      font-size: 45px; }
+      font-size: 55px; }
     .main .page h3 {
       text-align: center;
       color: whitesmoke;
-      font-size: 30px; }
+      font-size: 40px;
+      margin: 0; }
     .main .page .buttoncont {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      padding-top: 500px; }
+      padding-top: 400px; }
       .main .page .buttoncont .button {
         display: block;
         width: 115px;
-        height: 25px;
+        height: 35px;
         background: #ED1C24;
         padding: 10px;
         text-align: center;
         border-radius: 5px;
         color: whitesmoke;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
         text-decoration: none; }
+  .main .modal-window {
+    position: relative;
+    margin-bottom: 60px;
+    background-color: whitesmoke;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s; }
+    .main .modal-window:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto; }
+    .main .modal-window > div {
+      width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: whitesmoke; }
+    .main .modal-window header {
+      font-weight: bold; }
+    .main .modal-window h1 {
+      font-size: 25px;
+      margin: 0;
+      color: #6A0203; }
+    .main .modal-window h3 {
+      font-size: 19px;
+      color: #3B3936; }
+  .main .modal-close {
+    color: #aaa;
+    line-height: 30px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none; }
+    .main .modal-close:hover {
+      color: black; }
+  .main .sub {
+    display: flex;
+    flex-direction: column; }
 
 @media screen and (max-width: 700px) {
   .openbtn {

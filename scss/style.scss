@@ -8,6 +8,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Teko', sans-serif;
 }
 
 .container {
@@ -28,6 +29,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 1;
+    font-size: 20px;
     
     a {
         color: #6A0203;
@@ -53,7 +55,6 @@ body {
     #sidenav {
         position: fixed;
         left: 0px;
-    
         display: flex;
         flex-direction: column;
         background-color: #6A0203;
@@ -73,7 +74,7 @@ body {
             background-color: #3B3936;
             border-bottom: 1px dotted whitesmoke;
             padding: 8px 32px;
-            font-size: 25px;
+            font-size: 30px;
             text-decoration: none;
             transition: all .6s;
         }
@@ -84,7 +85,7 @@ body {
     }    
        
     .info {
-        padding-right: 33px !important; 
+        padding-right: 37px !important; 
     }
 
     .page {
@@ -102,36 +103,96 @@ body {
         h1 {
             text-align: center;
             color: whitesmoke;
-            margin-top: 0;
+            margin: 0;
             padding-top: 20px;
-            font-size: 45px;
+            font-size: 55px;
         }
 
         h3 {
             text-align: center;
             color: whitesmoke;
-            font-size: 30px;
+            font-size: 40px;
+            margin: 0;
         }
         .buttoncont {
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            padding-top: 500px;
+            padding-top: 400px;
 
             .button {
                 display: block;
                 width: 115px;
-                height: 25px;
+                height: 35px;
                 background: #ED1C24;
                 padding: 10px;
                 text-align: center;
                 border-radius: 5px;
                 color: whitesmoke;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 30px;
                 text-decoration: none;
             }
         }
+    }
+    .modal-window {
+        position: relative;
+        margin-bottom: 60px;
+        background-color: whitesmoke;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        &:target {
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        &>div {
+          width: 400px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 2em;
+          background: whitesmoke;
+        }
+        header {
+          font-weight: bold;
+        }
+        h1 {
+          font-size: 25px;
+          margin: 0;
+          color: #6A0203
+        }
+        h3 {
+            font-size: 19px;
+            color: #3B3936
+        }
+    }
+      
+    .modal-close {
+        color: #aaa;
+        line-height: 30px;
+        font-size: 80%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 70px;
+        text-decoration: none;
+
+        &:hover {
+          color: black;
+        }
+    }
+    .sub {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 700px) {
